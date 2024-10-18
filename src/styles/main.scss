@@ -97,3 +97,99 @@ h1 {
       }
     }
   }
+
+  @media (max-width: 1024px) {
+    .header__container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .header__links {
+      margin-right: 0;
+    }
+  
+    .sobre__content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .sobre__content__branding {
+      margin-bottom: 20px;
+    }
+  
+    .shows__list__item {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  
+      img {
+        max-width: 80%;
+      }
+  
+      p {
+        text-align: center;
+      }
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      background-image: url('../../dist/images/texture.jpg'); /* Verifique se o caminho está correto */
+      background-size: cover; /* Melhor opção para que a imagem cubra toda a tela */
+      background-repeat: no-repeat;
+      background-position: center; /* Centraliza o fundo */
+    }
+  
+    .header__container {
+      padding: 0 10px;
+    }
+  
+    .sobre__content {
+      padding: 10px;
+    }
+  
+    .shows__tabs {
+      overflow-x: scroll;
+      white-space: nowrap;
+      padding-left: 20px;
+    }
+  
+    .shows__tabs__button {
+      font-size: 16px;
+    }
+  
+    .shows__list__item img {
+      max-width: 200px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      background-image: url('../../dist/images/texture.jpg'); /* Aplica a mesma imagem para pequenas telas */
+      background-size: cover; /* Cobre o fundo inteiro */
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  
+    .header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .shows__list__item p {
+      font-size: 1rem;
+    }
+  
+    .shows__list__item img {
+      max-width: 150px;
+    }
+  
+    .footer__branding h2 {
+      font-size: 1.2rem;
+    }
+  
+    .footer__nav-list {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
