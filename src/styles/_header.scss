@@ -1,0 +1,37 @@
+@use 'variaveis';
+
+.header {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+    background-color: variaveis.$cabecalho;
+    position: sticky; 
+    top: 0;           
+    width: 100%;         
+    z-index: 1;
+    
+    &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    }
+
+    &__links {
+
+    list-style: none;
+    margin-right: 50px;
+    padding: 0;
+
+    &__item {
+        margin: 12px 6px;
+    
+            &:hover {
+                background-color: variaveis.$btn-hover; 
+                border-radius: 60px;
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./dist/css/main.css">
+  <title>PobreFlix</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+      <h1>PobreFlix</h1>
+      <ul class="header__links">
+        <li class="header__links__item">
+          <a href="#" class="button button--dark">Filmes</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <section class="sobre">
+    <div class="sobre__content">
+      <div class="sobre__content__branding">
+        <img src="./dist/images/carros.webp" alt="Banner do Filme Carros">
+      </div>
+      <h3>O PobreFlix tem como objetivo disponibilizar downloads de filmes e séries de forma gratuita para todos. Nossa plataforma oferece uma vasta coleção de títulos, permitindo que você assista ao que ama sem pagar nada por isso. Com um design amigável e fácil de navegar, queremos tornar o entretenimento acessível a todos. Junte-se a nós e descubra um mundo de filmes e séries ao seu alcance!</h3>
+    </div>
+  </section>
+
+  <section class="shows">
+    <nav class="shows__tabs">
+        <button data-tab-button="em_breve" class="shows__tabs__button shows__tabs__button--is-active">
+            Carros 1
+        </button>
+        <button data-tab-button="populares" class="shows__tabs__button">
+            Carros 2
+        </button>
+        <button data-tab-button="star_plus" class="shows__tabs__button">
+            Carros 3
+        </button>
+    </nav>
+    <h2>Sobre os Filmes</h2>
+    <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+        <li class="shows__list__item">
+          <p>Carros" apresenta Relâmpago McQueen, um carro de corrida jovem e arrogante que sonha em vencer a Copa Pistão. Durante sua jornada para a grande corrida na Califórnia, McQueen se perde na cidade de Radiator Springs, uma comunidade esquecida na Rota 66. Lá, ele aprende valiosas lições sobre amizade, humildade e o verdadeiro significado de vitória, com a ajuda dos residentes locais, como Mate, o guincho atrapalhado, e Sally, um Porsche apaixonado pela cidade.</p>
+          <button class="shows__button" onclick="window.location.href='https://drive.google.com/file/d/1i1AkofPSmGaVtdur_JNmIwKJwRVoL6OY/view?usp=drive_link'">Baixe Agora</button>
+
+
+          <img src="./dist/images/capa carros 1.jpg" alt="capa carros 1">
+        </li>
+    </ul>
+
+    <ul data-tab-id="populares" class="shows__list">
+        <li class="shows__list__item">
+          <p>Em Carros 2, Relâmpago McQueen é convidado para participar do Grand Prix Mundial, uma competição internacional. Ele viaja com seu amigo Mate para países como o Japão e a Itália. No entanto, a história também se foca em Mate, que é confundido com um espião internacional e acaba envolvido em uma trama de espionagem. O filme combina ação de espionagem com corridas, enquanto McQueen enfrenta rivais e Mate descobre que ser ele mesmo é sua maior força.</p>
+          <button class="shows__button" onclick="window.location.href='https://drive.google.com/file/d/1VzYp_dlPAJg0PA1gj3-CtFew0-2PKTS8/view?usp=drive_link'">Baixe Agora</button>
+          <img src="./dist/images/capa carros 2.jpg" alt="capa carros 2">
+        </li>
+        
+    </ul>
+
+    <ul data-tab-id="star_plus" class="shows__list">
+        <li class="shows__list__item">
+          <p>Em Carros 3, McQueen enfrenta o desafio de uma nova geração de carros de corrida altamente tecnológicos, liderados por Jackson Storm, que ameaça aposentar os corredores mais antigos. Depois de um grave acidente, McQueen questiona seu futuro nas pistas. Com a ajuda de Cruz Ramirez, uma treinadora entusiasta, ele busca recuperar sua confiança e descobrir uma nova maneira de vencer. O filme explora a aceitação das mudanças e o legado deixado por aqueles que passaram o bastão.</p>
+          <button class="shows__button" onclick="window.location.href='https://drive.google.com/file/d/1J8suPq6dOsl5u6DOoIoG1SKYVcdAQpWS/view?usp=drive_link'">Baixe Agora</button>
+          <img src="./dist/images/capa do carros 3.jpg" alt="capa carros 3">
+        </li>
+    </ul>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__branding">
+        <h2 class="footer__logo">PobreFlix</h2>
+        <p class="footer__description">Seu site de filmes favoritos e mais acessível.</p>
+      </div>
+      
+      <nav class="footer__nav">
+        <ul class="footer__nav-list">
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Filmes</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Séries</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Contato</a></li>
+          <li class="footer__nav-item"><a href="#" class="footer__nav-link">Sobre nós</a></li>
+        </ul>
+      </nav>
+  
+      <div class="footer__social">
+        <a href="#" class="footer__social-link">Instagram</a>
+        <a href="#" class="footer__social-link">Facebook</a>
+        <a href="#" class="footer__social-link">Twitter</a>
+      </div>
+    </div>
+    <div class="footer__credits">
+      <p>&copy; 2024 PobreFlix. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  
+  
+  <script src="./dist/js/scripts.js"></script>
+</body>
+</html>

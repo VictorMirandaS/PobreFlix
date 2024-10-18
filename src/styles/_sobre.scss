@@ -1,0 +1,29 @@
+@use 'variaveis';
+
+
+.sobre {
+    &__content {
+        display: flex; 
+        align-items: center; 
+        justify-content: space-between; 
+        padding: 20px; 
+
+        &__branding {
+            flex: 1;
+            
+            img {
+                border-radius: 30px;
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        h3 {
+            color: variaveis.$text-color;
+            flex: 1; 
+            padding: 20px; 
+            font-size: 24px; 
+            margin: 0; 
+        }
+    }
+}

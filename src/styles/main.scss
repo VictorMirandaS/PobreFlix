@@ -1,0 +1,99 @@
+@use 'variaveis';
+@use 'header';
+@use 'sobre';
+@use 'show';
+@use 'footer';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Afacad Flux, sans-serif;
+}
+
+body {
+    background-image: url('../../dist/images/texture.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center; 
+}
+
+h1 {
+    color: variaveis.$text-color;
+}
+
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    font-size: 18px;
+    
+    color: variaveis.$text-color;
+    background-color: variaveis.$bg-color;
+    text-transform: uppercase;
+    border-radius: 12px;
+    text-decoration: none;
+    padding: 8px 14px;
+    letter-spacing: 1px;
+    border: 1px solid variaveis.$primary-color;
+    box-sizing: border-box;
+
+    &:hover {
+        background-color: variaveis.$btn-hover;
+        border-color: variaveis.$btn-hover;
+    }
+}
+
+.accordion-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  
+    .accordion-button {
+      background-color: variaveis.$primary-color;
+      color: variaveis.$text-color;
+      padding: 10px 20px;
+      border: 1px solid rgb(168, 24, 24);
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1rem;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background-color: variaveis.$btn-hover;
+      }
+    }
+  
+    .accordion-content {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      
+      button {
+        background-color: variaveis.$bg-color;
+        color: variaveis.$text-color;
+        padding: 8px 14px;
+        border: none;
+        border-radius: 12px;
+        margin: 5px 0;
+        cursor: pointer;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        width: 100%;
+        transition: background-color 0.3s;
+  
+        &:hover {
+          background-color: variaveis.$btn-hover;
+          color: #fff
+        }
+      }
+    }
+  }

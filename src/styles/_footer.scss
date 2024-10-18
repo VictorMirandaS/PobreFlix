@@ -1,0 +1,79 @@
+@use 'variaveis';
+
+.footer {
+    background-color: variaveis.$cabecalho;
+    color: variaveis.$text-color;
+    padding: 1rem 0;  // Reduzido o padding para diminuir o tamanho
+    font-family: Arial, sans-serif;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;  // Mantém centralizado
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0.5rem;  // Reduzido o padding interno
+        text-align: center;
+    }
+
+    &__branding {
+        margin-bottom: 1rem;  // Reduz o espaço inferior
+
+        &__logo {
+            font-size: 1.5rem;  // Diminui o tamanho da fonte do logo
+            font-weight: bold;
+            margin-bottom: 0.25rem;  // Reduz o espaço inferior
+        }
+
+        &__description {
+            font-size: 0.9rem;  // Diminui a fonte da descrição
+            color: #aaa;
+        }
+    }
+
+    &__nav {
+        margin-bottom: 1rem;  // Reduz o espaçamento inferior
+
+        &-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1.5rem;  // Reduz o espaço entre os links de navegação
+        }
+
+        &-link {
+            color: variaveis.$text-color;
+            text-decoration: none;
+            font-size: 0.9rem;  // Reduz o tamanho da fonte
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__social {
+        margin-bottom: 1rem;  // Reduz o espaço inferior
+
+        &-link {
+            color: variaveis.$text-color;
+            text-decoration: none;
+            margin: 0 8px;  // Reduz o espaçamento lateral
+            font-size: 0.9rem;  // Diminui o tamanho da fonte
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__credits {
+        font-size: 0.7rem;  // Diminui o tamanho da fonte dos créditos
+        color: #aaa;
+        padding-top: 0.5rem;  // Reduz o espaçamento superior
+        border-top: 1px solid #333;  // Mantém a borda superior
+    }
+}
+
